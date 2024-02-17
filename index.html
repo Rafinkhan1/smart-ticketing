@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart-Ticketing</title>
+  <!-- daisyUI & tailwind Css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    .font {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font">
+  <header>
+    <div class="navbar bg-base-100 mx-auto max-w-6xl ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destinition</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destinition</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Bus <img src="images/bus-icon.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <section>
+      <div class="relative  mx-auto  max-w-[1171px] overflow-hidden rounded-3xl bg-cover bg-no-repeat text-center"
+        style="background-image: url('./images/banner.png'); height: 550px">
+        <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+          style="background-color: rgba(0, 0, 0, 0.6)">
+          <div class="flex h-full items-center justify-center">
+            <div class="text-white">
+              <h2 class="mb-4 h-44 font-extrabold text-6xl ">End-to-End Travel with <br> <span class="text-[#1DD100]">P
+                  Paribahan</span></h2>
+              <h4 class="mb-6 text-xl font-normal">Yes, you can run unit tests and view the results directly within the
+                app. The <br> integrated testing features allow for a streamlined .</h4>
+              <button class="btn bg-[#1DD100]">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- second section -->
+
+  </main>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
