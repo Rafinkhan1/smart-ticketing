@@ -18,6 +18,10 @@
     .font {
       font-family: "Raleway", sans-serif;
     }
+    li{
+      display: flex;
+      justify-content: space-between;
+    }
   </style>
 </head>
 
@@ -134,7 +138,7 @@
               <p>coach-009-WEB | AC_Business</p>
             </div>
           </div>
-         <p> <img src="./images/seat-green.png" class="inline" alt=""><span class="font-sans">40 Seats Left</span></p>
+         <p class="bg-[#1DD10026] p-4 rounded-2xl"> <img src="./images/seat-green.png" class="inline" alt=""><span class="font-sans  text-[#1DD100]"><span> 8 </span>Seats Left</span></p>
         </div >
         
         <div class="bg-[#F7F8F8] rounded-xl ml-3">
@@ -172,61 +176,95 @@
     </section>
 <!-- third section close -->
 <!-- fourth section start -->
-<section class="bg-[#F7F8F8]">
+<section class="bg-[#F7F8F8] ">
 
-  <div class="grid grid-cols-1 lg:flex lg:justify-between max-w-[1170px] mx-auto pt-12">
+  <div class="grid grid-cols-1 lg:flex lg:justify-between  max-w-[1170px] mx-auto pt-12 ">
     <!-- select seat -->
-    <div class="bg-white">
-      <h3 class="mt-12">Select Your Seat</h3>
+    <div class="bg-white p-6 rounded-2xl">
+      <h3 class="mt-12 mb-6 font-semibold text-xl">Select Your Seat</h3>
       <div class="flex grid-cols-1 justify-between">
-        <p><img class="inline" src="./images/seat-gray.png" alt="">Available</p>
-        <p><img class="inline" src="./images/seat-green-filled.png " alt="">Selected</p>
+        <p class="font-medium"><img class="inline  " src="./images/seat-gray.png" alt="">Available</p>
+        <p class="font-medium text-[#1DD100]"><img class="inline " src="./images/seat-green-filled.png " alt="">Selected</p>
       </div>
-      <p class="text-end mb-6"><button class="btn w-28 h-14 "><img src="./images/Vector.png" alt=""></button></p>
+      <p class="text-end mb-6 mt-5"><button class="btn w-28 h-14 "><img src="./images/Vector.png" alt=""></button></p>
       <div class="">
-       <div class="flex gap-8 items-center">
-        <p class="inline mr-5">A</p>
-        <button class="btn w-28 mb-6">Button</button>
-      
-        <button class="btn w-28 mb-6">Button</button>
-        <button class="btn w-28 mb-6">Button</button>
-        <button class="btn w-28 mb-6">Button</button>
-      </div>
-       <div class="flex gap-8 items-center">
-        <p class="inline mr-5">B</p>
-        <button class="btn w-28">Button</button>
        
         
-        <button class="btn w-28">Button</button>
-        <button class="btn w-28">Button</button>
-        <button class="btn w-28">Button</button>
+        <div class="flex gap-28 justify-between items-center font-sans">
+        <div class="flex gap-9">
+          <!-- <p class="inline">A</p> -->
+          <div>
+            <button  id="A1" class="btn seat-number w-28 mb-6">A1</button>
+          </div>
+        <div>
+          <button  id="A2" class="btn seat-number w-28 mb-6">A2</button>
+        </div>
+      
+        
+      </div>
+      <div class="flex gap-9">
+        <div>
+          <button  id="A3" class="btn seat-number w-28 mb-6">A3</button>
+        </div>
+        <div>
+          <button  id="A4" class="btn seat-number w-28 mb-6">A4</button>
+        </div>
+        
+      </div>
+      </div>
+      <div class="flex justify-between font-sans">
+        <div class="flex gap-9">
+          <!-- <p class="inline">B</p> -->
+          <div>
+            <button  id="B1" class="btn seat-number w-28 mb-6">B1</button>
+          </div>
+        <div>
+          <button  id="B2" class="btn seat-number w-28 mb-6">B2</button>
+        </div>
+         
+      </div>
+      <div class="flex gap-9">
+        <div>
+          <button id="B3" class="btn seat-number w-28 mb-6">B3</button>
+        </div>
+        <div>
+          <button id="B4" class="btn seat-number w-28 mb-6">B4</button>
+        </div>
+        
+      </div>
       </div>
       </div>
 
     </div>
     <!-- total seat price -->
-    <div class="bg-white">
+    <div class="bg-white p-6 rounded-2xl">
     
-      <h3 class="mt-12">Total seat Price</h3>
-      <div class="bg-[#F7F8F8] p-8">
-      <div>
-        <div class="flex justify-between">
-        <p>seat <span class="font-sans">0</span></p>
-        <p>Class</p>
-        <p>Price</p>
+      <h3 class="mt-12 font-semibold text-xl">Total seat Price</h3>
+      <div class="bg-[#F7F8F8] p-8 font-sans rounded-2xl">
+      <div class="">
+        <div class="flex justify-between mb-3">
+        <p class="font-medium ">seat <span id="total-seat" class="font-sans text-[#1DD100]">0</span></p>
+        <p class="font-medium">Class</p>
+        <p class="font-medium">Price</p>
       </div>
-      <div class="flex justify-between">
-        <p>Total Price</p>
-        <p>BDT <span>0</span></p>
+      <hr class="border-dotted border-black ">
+      <ul id="selected-Button " class="selected-button">
+      <!-- selected button is showing here -->
+      </ul>
+      <hr class="border-dotted border-black ">
+
+      <div class="flex justify-between mt-3 mb-3">
+        <p class="font-medium ">Total Price</p>
+        <p  class="font-medium">BDT <span >0</span></p>
       </div>
       
-      <div class="bg-white flex justify-between">
+      <div class="bg-white flex justify-between mb-3">
        <input type="text" name="" id="" placeholder="Have any copuon?">
        <button class="btn bg-[#1DD100]">Button</button>
       </div>
-<div class="flex justify-between">
-  <p>Grand Total</p>
-  <p> BDT <span>0</span> </p>
+<div class="flex justify-between mt-2">
+  <p class="font-medium">Grand Total</p>
+  <p class="font-medium"> BDT <span class="font-sans">0</span> </p>
   
 </div>
 </div>
@@ -241,6 +279,7 @@
 
   </main>
   <script src="js/script.js"></script>
+  <script src="js/utility.js"></script>
 </body>
 
 </html>
