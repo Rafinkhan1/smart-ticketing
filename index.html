@@ -79,9 +79,9 @@
         <h1>Best Offer For You</h1>
       </div>
 
-      <div class="flex justify-between max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 gap-6 lg:grid lg:grid-cols-2 max-w-[1200px] mx-auto">
         <!-- first offer -->
-        <div class="flex items-center bg-[#FFBF0F] w-[575px] rounded-3xl ">
+        <div class=" flex items-center bg-[#FFBF0F] max-w-[575px] rounded-3xl ">
 
           <div class="pl-12 pr-16">
             <h1 class="text-4xl font-black">15% OFF</h1>
@@ -97,7 +97,7 @@
           </div>
         </div>
         <!-- another offer -->
-        <div class="flex items-center bg-[#F78C9C] w-[575px] rounded-3xl">
+        <div class="flex items-center bg-[#F78C9C] max-w-[575px] rounded-3xl">
 
           <div class="pl-12 pr-16">
             <h1 class="text-4xl font-black">20% OFF</h1>
@@ -122,14 +122,15 @@
         <p class="mt-6 mb-8">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features
           allow for a streamlined .</p>
       </div>
-      <div class="flex items-center w-[1200px] rounded-3xl bg-white mx-auto">
+      <div class="grid lg:flex  items-center w-[1200px] rounded-3xl bg-white mx-auto">
         <!-- left side start -->
-      <div class="w-[810px] ">
-        <div class="flex justify-between p-6">
-          <div class="flex ">
+      
+        <div class="w-[810px] ">
+        <div class="grid lg:flex  justify-between p-6">
+          <div class="grid lg:flex ">
             <img src="./images/bus-logo.png" alt="">
-            <div class="">
-              <h1>Greenline Paribahan</h1>
+            <div class="lg:ml-3">
+              <h1 class="text-xl font-bold">Greenline Paribahan</h1>
               <p>coach-009-WEB | AC_Business</p>
             </div>
           </div>
@@ -137,42 +138,108 @@
         </div >
         
         <div class="bg-[#F7F8F8] rounded-xl ml-3">
-        <div class="flex justify-between p-6">
+        <div class="grid lg:flex justify-between p-6">
           <p>Route</p>
-          <h3>Dhaka-Sylhet</h3>
+          <h3 class="font-semibold">Dhaka-Sylhet</h3>
         </div>
-        <hr class=" border-dotted border-s border-black w-[790px] mx-auto">
-        <div class="flex justify-between p-6">
+        <hr class="grid border-dotted border-s border-black max-w-[790px] mx-auto">
+        <div class=" grid lg:flex justify-between p-6">
           <p>Departure Time</p>
-          <h3>9.00 PM</h3>
+          <h3 class="font-semibold">9.00 PM</h3>
         </div>
-        <hr class=" border-dotted border-s border-black  w-[790px] mx-auto">
-        <div class="flex justify-between p-6">
-          <h4 class="bg-[#0307120D] rounded-md p-2">Boarding point - Laxmipur</h4>
-          <h4 class="bg-[#0307120D] rounded-md p-2">Dropping Point - Bogura</h4>
-          <h4 class="bg-[#0307120D] rounded-md p-2">Est. Time- 11 Hour</h4>
+        <hr class="grid border-dotted border-s border-black  max-w-[790px] mx-auto">
+        <div class="grid lg:flex justify-between p-6">
+          <h4 class="bg-[#0307120D] rounded-md p-2 mb-2 font-semibold">Boarding point - Laxmipur</h4>
+          <h4 class="bg-[#0307120D] rounded-md p-2 mb-2 font-semibold">Dropping Point - Bogura</h4>
+          <h4 class="bg-[#0307120D] rounded-md p-2 mb-2 font-semibold">Est. Time- 11 Hour</h4>
         </div>
         </div>
       </div>
       <!-- left side end -->
-      <div>
-      <div>
+      <div class="flex items-center">
+      <div class="pl-9 ">
         <img src="./images/info-devider.png" alt="">
       </div>
-      </div>
-      <div>
+      
+      <div class="p-16">
         <img src="./images/fare.png" alt="">
-        <h3>550 Tk</h3>
-        <h3>Per Sit</h3>
+        <h3 class="font-bold text-2xl">550 Tk</h3>
+        <h3 class="font-semibold"> Per Seat</h3>
       </div>
     </div>
+    </div>
+    
+    </section>
+<!-- third section close -->
+<!-- fourth section start -->
+<section class="bg-[#F7F8F8]">
+
+  <div class="grid grid-cols-1 lg:flex lg:justify-between max-w-[1170px] mx-auto pt-12">
+    <!-- select seat -->
+    <div class="bg-white">
+      <h3 class="mt-12">Select Your Seat</h3>
+      <div class="flex grid-cols-1 justify-between">
+        <p><img class="inline" src="./images/seat-gray.png" alt="">Available</p>
+        <p><img class="inline" src="./images/seat-green-filled.png " alt="">Selected</p>
+      </div>
+      <p class="text-end mb-6"><button class="btn w-28 h-14 "><img src="./images/Vector.png" alt=""></button></p>
+      <div class="">
+       <div class="flex gap-8 items-center">
+        <p class="inline mr-5">A</p>
+        <button class="btn w-28 mb-6">Button</button>
+      
+        <button class="btn w-28 mb-6">Button</button>
+        <button class="btn w-28 mb-6">Button</button>
+        <button class="btn w-28 mb-6">Button</button>
+      </div>
+       <div class="flex gap-8 items-center">
+        <p class="inline mr-5">B</p>
+        <button class="btn w-28">Button</button>
+       
+        
+        <button class="btn w-28">Button</button>
+        <button class="btn w-28">Button</button>
+        <button class="btn w-28">Button</button>
+      </div>
+      </div>
+
+    </div>
+    <!-- total seat price -->
+    <div class="bg-white">
+    
+      <h3 class="mt-12">Total seat Price</h3>
+      <div class="bg-[#F7F8F8] p-8">
+      <div>
+        <div class="flex justify-between">
+        <p>seat <span class="font-sans">0</span></p>
+        <p>Class</p>
+        <p>Price</p>
+      </div>
+      <div class="flex justify-between">
+        <p>Total Price</p>
+        <p>BDT <span>0</span></p>
+      </div>
+      
+      <div class="bg-white flex justify-between">
+       <input type="text" name="" id="" placeholder="Have any copuon?">
+       <button class="btn bg-[#1DD100]">Button</button>
+      </div>
+<div class="flex justify-between">
+  <p>Grand Total</p>
+  <p> BDT <span>0</span> </p>
+  
+</div>
+</div>
     </div>
 
-    </section>
+  </div>
+  </div>
+  
+</section>
+
+
 
   </main>
-
-
   <script src="js/script.js"></script>
 </body>
 
