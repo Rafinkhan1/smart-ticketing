@@ -11,30 +11,67 @@
 
         buttons.addEventListener('click',function(event){
             count = count+1;
+            if(count<=4){
             setInnerNumber('total-seat',count)
-            event.target.style.backgroundColor = 'red';
+            
+            }
+            
+            if(count<=4){
+                event.target.style.backgroundColor = 'red';
+            }else{
+                event.target.style.backgroundColor = '';
+            }
+            // event.target.style.backgroundColor = 'red';
             if(sub>=1 && sub<=8){
                sub = sub -1 ; 
+
             }
             else{
-                alert();
+                alert('Sit not available');
             }
-            setInnerNumber('seat-available', sub)
 
+             setInnerNumber('seat-available', sub)
+
+
+            if(count<=4){
+                const totalPrice = document.getElementById('total-price').innerText;
+
+                const PriceInteger = parseInt(totalPrice);
+                const sum = PriceInteger+550;
+                setInnerNumber('total-price',sum);
+
+                
+            const grandTotal = document.getElementById('grand-total').innerText;
+            const grandInteger = parseInt(grandTotal);
+            const sum2 = grandInteger+550;
+            setInnerNumber('grand-total',sum2)
+            }
+            else{
+
+                alert('you cannot buy more than 4 tickets');
+                
+            }
             // priceCount = priceCount+1;
-            const totalPrice = document.getElementById('total-price').innerText;
+            // const totalPrice = document.getElementById('total-price').innerText;
 
-            const PriceInteger = parseInt(totalPrice);
-            document.getElementById('total-price').innerText = PriceInteger+550;
+            // const PriceInteger = parseInt(totalPrice);
+            // const sum = PriceInteger+550;
+            // setInnerNumber('total-price',sum);
             // totalPrice = 550*priceCount;
             
-            console.log(totalPrice)
+            // console.log(totalPrice)
 
+            // const grandTotal = document.getElementById('grand-total').innerText;
+            // const grandInteger = parseInt(grandTotal);
+            // const sum2 = grandInteger+550;
+            // setInnerNumber('grand-total',sum2)
 
 
             
 
+            if(count<=4){
 
+        
             const buttonName = event.target.parentNode.childNodes[1].innerText
             // const buttonName1 = event.target.parentNode.childNodes[5].innerText;
             const selectedButtonContainer = document.getElementById('selected-Btn');
@@ -54,7 +91,7 @@
 
             selectedButtonContainer.appendChild(li);
 
-
+            }
 
 
 
